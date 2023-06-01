@@ -7,8 +7,17 @@
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
-        Title="Home"
+        Title="Jumbo maps"
+        
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+    <Shell.ToolbarItems >
+        <ToolbarItem Text="Maps" IconImageSource="map.png"></ToolbarItem>
+        <ToolbarItem Text="Producten" IconImageSource="box.png"></ToolbarItem>
+        <ToolbarItem Text="Paden" IconImageSource="path.png"></ToolbarItem>
+        <ToolbarItem Text="Instellingen" IconImageSource="settings.png"></ToolbarItem>
+        <ToolbarItem Text="Info"></ToolbarItem>
+    </Shell.ToolbarItems>
 
 </Shell>
