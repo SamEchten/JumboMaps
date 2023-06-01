@@ -1,4 +1,5 @@
-﻿using System;
+﻿using jumboMaps1._0.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,11 @@ namespace jumboMaps1._0.ViewModel
     {
         public String Name { get; set; }
         public StoreAdmin StoreAdmin { get; set; }
-        public BluePrint Blueprint { get; set; }
+        public Blueprint Blueprint { get; set; }
         public List<Section> Sections { get; set; }
-        public Store() { }
+        
+        public Store(string name) {
+            this.Name = name;
+        }
     }
 }
